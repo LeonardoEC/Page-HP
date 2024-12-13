@@ -1,12 +1,25 @@
 import HarryPotterAPI from '../db/data.js';
 
-async function getGryffindorCharacters() {
-    const data = await HarryPotterAPI.fetchData();
-    const gryffindor = data.filter(character => character.house === "Gryffindor");
-    return gryffindor;
+class Gryffindor {
+    static cachedCharacters = null;
+
+    static async getCharacters() {
+        if (Gryffindor.cachedCharacters === null) {
+            const data = await HarryPotterAPI.fetchData();
+            Gryffindor.cachedCharacters = data.filter(character => character.house === "Gryffindor");
+        }
+        return Gryffindor.cachedCharacters;
+    }
+
+    static async getMaleCharacters() {
+        const characters = await Gryffindor.getCharacters();
+        return characters.filter(character => character.gender === 'male');
+    }
+
+    static async getFemaleCharacters() {
+        const characters = await Gryffindor.getCharacters();
+        return characters.filter(character => character.gender === 'female');
+    }
 }
 
-// Ejemplo de uso
-getGryffindorCharacters()
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
+export default Gryffindor;

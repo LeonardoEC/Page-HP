@@ -1,0 +1,46 @@
+/* Móviles */
+@media (max-width: 480px) 
+{
+    .main_logo {
+        width: 50vw;
+    }
+    .house_logo {
+        width: 30vw;
+        height: 30vh;
+        filter: blur(0px);
+        opacity: 0.3;
+    }
+}
+
+/* Tabletas */
+@media (min-width: 481px) and (max-width: 768px) 
+{
+    .main_logo {
+        width: 50vw;
+    }
+    .house_logo {
+        width: 25vw;
+        height: 25vh;
+        filter: blur(0px);
+        opacity: 0.3;
+    }
+}
+
+/* PCs y portátiles */
+@media (min-width: 769px) and (max-width: 1280px) 
+{
+    .main_logo {
+        width: 40vw;
+    }
+    .house_logo {
+        width: 25vw;
+        height: 25vh;
+        filter: blur(0px);
+        opacity: 0.3;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1201px) {
+
+}

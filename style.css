@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: 
+        linear-gradient(to top left, #5A0505 25%, #7F0909, #5A0505 25%, #2E0000 100%, transparent) top left,
+        linear-gradient(to top right, #113220 25%, #1A472A, #113220 25%, #061A0D 100%, transparent) top right,
+        linear-gradient(to bottom left, #BAB20D 25%, #EEE117, #BAB20D 25%, #7C7C08 100%, transparent) bottom left,
+        linear-gradient(to bottom right, #091032 25%, #0E1A40, #091032 25%, #040823 100%, transparent) bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.logos {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.main_logo {
+    position: relative;
+    top: 6px;
+    transition: 1s;
+    width: 20vw;
+    height: 40vh;
+    opacity: 0.9;
+}
+
+.house_logo {
+    width: 20vw;
+    height: 20vh;
+    transition: 1s;
+    filter: blur(5px);
+    opacity: 0.03;
+    object-fit: contain;
+}
+
+.main_logo:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.house_logo:hover {
+    cursor: pointer;
+    transition: 1s;
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.house_position {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
