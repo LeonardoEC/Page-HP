@@ -4,10 +4,73 @@
     box-sizing: border-box;
 }
 
-
-body
-{
-    height: 100vh;
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
     background: linear-gradient(to bottom left, #BAB20D 25%, #EEE117, #BAB20D 25%, #7C7C08 100%, transparent);
-    background-repeat: no-repeat;    
+}
+
+#main{
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('https://images3.alphacoders.com/123/1233951.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #FFC500;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7F0909;
+}
+
+.hero-content {
+    position: relative;
+    top: 70vh;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
