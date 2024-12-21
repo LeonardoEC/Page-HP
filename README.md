@@ -1,4 +1,4 @@
-# El Mundo Mágico de Harry Potter
+# Proyecto personal web Harry Potter
 
 Este proyecto es una página web personal sin fines de lucro, creada con el propósito de mejorar mis habilidades en desarrollo web. Se basa en el universo ficticio de Harry Potter, creado por J.K. Rowling.
 
