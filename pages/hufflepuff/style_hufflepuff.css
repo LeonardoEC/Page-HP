@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     color: #fff;
@@ -73,4 +78,19 @@ body {
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#history
+{
+    height: 100vh;
+    background-image: url("https://erikstore.com/blog/wp-content/uploads/2024/05/BannerBlog_Hufflepuff.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.top-der-fundador {
+    background-color: rgba(230, 255, 2, 0.644) !important; 
+    border: 1px solid rgba(136, 127, 127, 0.397) !important;
 }

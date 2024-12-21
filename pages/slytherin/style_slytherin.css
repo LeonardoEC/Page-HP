@@ -4,10 +4,99 @@
     box-sizing: border-box;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
 
 body
 {
     height: 100vh;
     background: linear-gradient(#113220 25%, #1A472A, #113220 25%, #061A0D 100%, transparent);
     background-repeat: no-repeat;    
+}
+
+#main{
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('https://images.alphacoders.com/123/thumb-1920-1233950.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #C4C4C4;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #1A472A;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0E1A40;
+}
+
+.hero-content {
+    position: relative;
+    top: 70vh;
+}
+
+.hero-content {
+    position: relative;
+    top: 70vh;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#history
+{
+    height: 100vh;
+    background-image: url("https://erikstore.com/blog/wp-content/uploads/2024/03/BannerBlog_Slytherin-980x592.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.top-der-fundador {
+    background-color: rgba(230, 255, 2, 0.644) !important; 
+    border: 1px solid rgba(136, 127, 127, 0.397) !important;
 }

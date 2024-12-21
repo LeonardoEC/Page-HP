@@ -9,10 +9,8 @@ class NavBar {
                 </a>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Historia</a></li>
-                <li><a href="#projects">Estudiantes</a></li>
-                <li><a href="#contact">Asañas</a></li>
+                <li><a href="#history">Historia</a></li>
+                <li><a href="#students">Estudiantes</a></li>
             </ul>
         </nav>
     `;

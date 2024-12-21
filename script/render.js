@@ -1,11 +1,13 @@
 class Render {
+
     static renderElementById(elementId, content, styleClass = null) {
         const element = document.getElementById(elementId);
         if (element) {
             const sanitizedContent = DOMPurify.sanitize(content);
+
             element.innerHTML = sanitizedContent;
+
             if (styleClass) {
-                element.className = '';
                 element.classList.add(styleClass);
             }
         } else {

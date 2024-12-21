@@ -8,6 +8,23 @@ class HarryPotterAPI {
         }
         return HarryPotterAPI.cachedData;
     }
+
+    static async getCharacters(house)
+    {
+        const data = await HarryPotterAPI.fetchData();
+        return HarryPotterAPI.cachedCharacters = data.filter(character => character.house === house)
+    }
+
+    static async getMaleCharacters(house) {
+        const characters = await HarryPotterAPI.getCharacters(house);
+        return characters.filter(character => character.gender === 'male');
+    }
+
+    static async getFemaleCharacters(house) {
+        const characters = await HarryPotterAPI.getCharacters(house);
+        return characters.filter(character => character.gender === 'female');
+    }
+
 }
 
 export default HarryPotterAPI;
