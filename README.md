@@ -2,6 +2,8 @@
 
 Este proyecto es una página web personal sin fines de lucro, creada con el propósito de mejorar mis habilidades en desarrollo web. Se basa en el universo ficticio de Harry Potter, creado por J.K. Rowling.
 
+![Captura de Pantalla del Proyecto](docs/img/hp_page.png)
+
 ## Descripción
 
 Esta página web explora el mundo mágico de Harry Potter, ofreciendo información sobre personajes, hechizos, casas y otros elementos del universo. La información se obtiene principalmente de la API pública [https://hp-api.herokuapp.com/](https://hp-api.herokuapp.com/), complementada con datos creados por mí y con la ayuda de la IA Copilot. Las imágenes utilizadas provienen de [commons.wikimedia.org](commons.wikimedia.org), respetando las licencias correspondientes.
